@@ -1,0 +1,54 @@
+h1{
+    color: black;
+}
+table{
+    border-color: black;
+    background-color: black;
+    color: black;
+    table-layout: auto;
+}
+tr{
+    color: aliceblue;
+    background-color: darkgray;
+}
+summary{
+    color: blue;
+}
+a{
+    border-radius: 13px
+    ;
+    background-color:blue;
+    color: blanchedalmond;
+    padding:8px ;
+    text-decoration: none;
+}
+del{
+    color: red;
+}
+ins{
+    color: blue;
+}
+.animate{
+    animation-delay: 0s;
+    animation-duration: 55;
+    
+}
+
+form{
+
+    padding: 6px;
+    margin-bottom: 3px;
+}
+.image{
+    display: flex;
+    width: 100%;
+}
+img{
+    width: 25%;
+    height: 100px;
+}
+@keyframes animate { scroll
+    0%{transform: translateX(0);}
+    100%{transform: translateX(calc(-250px*5));}
+    
+}

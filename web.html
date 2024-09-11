@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="web.css">
+    <style> 
+    body{
+        margin: 0px;
+        padding: 0px;
+        min-width:  100vw;
+        min-height: 100vh;
+    }
+    .custom-small{
+        font-size: smaller;
+    }
+    .carousel{ overflow: hidden;
+      white-space: nowrap;
+      position: relative;
+    width: 100%;
+    }
+     .carousel-inner {display: flex;
+   margin-left: 10px;
+width: 1000%;
+animation: slide 100s ease-in-out infinite  0s ease-in-out;}
+.carousel-item{
+  width: 100vw;
+  flex: 0 0 auto;
+}
+.carousel-item img{
+  width: 100%;display: block;
+}
+@keyframes slide {0%{transform: translatex(0);}
+   10%{transform: translatex(-100%);}
+       20%{transform: translate(-200%);}
+           30%{transform: translate(-300%);}
+               40%{transform: translate(-400%);}
+                   50%{transform: translate(-500%);}ss
+                       60%{transform: translate(-600%);}
+                           70%{transform: translate(-700%);}
+                               80%{transform: translate(-800%);}
+                                   90%{transform: translate(-900%);}
+                                      100%{transform: translate(0%);}
+
+}
+
+.slideshow-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%; /* 100% * number of slides */
+            animation: slide 5s infinite linear both;
+        }
+
+        .slide {
+            flex: 0 0 ;
+            box-sizing: border-box;
+        }
+
+      
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-20%); }
+            50% { transform: translateX(-60%); }
+            75% { transform: translateX(-70%); }
+            100% { transform: translateX(0); }
+        }
+
+   </style>
+</head>
+<body>
+    <header style="width: 100vw;" class=" navbar position-fixed mt-0 container-fluid bg-dark ">
+        <nav class="navbar container navbar-collapse-md  navbar-expand-lg navbar-dark bg-dark position-sticky">
+           
+                <li class="nav-brand ms-5 mt-2"><a href=""><i class="fa-brands fa-apple mb-3 p-0" style="color: white;"></i></a></li>
+                <button class="navbar-toggler r" type="button" data-bs-toggle="collapse" data-bs-target="#navbarnav" aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span style="position:absolute; right:0%; top:17px; "  class="navbar-toggler-icon my-auto me-3"></span>
+                  </button>
+                  <div class="collapse navbar-collapse justify-content-center" id="navbarnav">
+                    <ul class="navbar-nav flex-row  ">
+                
+                <li class="nav-item  " ><a class="nav-link fs-6  mx-1" href="">store</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">mac</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">ipad</a></li>
+                <li class="nav-item "><a class="nav-link fs-6  mx-1" href="">iphone</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">watch</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">vision</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">Airpods</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">Tv&Home</a></li>
+                <li class="nav-item  "><a class="nav-link fs-6  mx-1" href="">Entertaiment</a></li>
+                <li class="nav-item "><a class="nav-link fs-6  mx-1" href="">accsesories</a></li>
+                <li class="nav-item "><a class="nav-link fs-6 mx-1" href="">Support</a></li>
+            </ul> </div>
+              <ul class="navbar-nav flex-row  ">
+                <li class="nav-item  me-sm-5 ms-sm-2"><a class="nav-link fs-6 "  href=""><i class="fas fa-search"></i></i></a></li>
+                <li class="nav-item  me-sm-5 "><a class="nav-link fs-6 ms-2 me-5 " href="" ><i class="fas fa-shopping-bag"></i></i></a></li>
+              </ul>  
+           
+        </nav>
+    </header>
+    <section class=" bg-image d-flex s col-sm-12 col-md-12 
+    mt-0 container-fluid w-lg-75 overflow-hidden" style="background-image: url(./hero_relay__ccnw0zrbr4ly_medium.jpg)
+     ; background-size:cover; background-repeat: no-repeat;background-position: center;min-width: 100%; height: 900px; overflow: hidden;" >
+     <div class="center justify-content-center mx-auto my-auto">   <a href="" 
+        class=" mt-5 text-decoration-none 
+       text-white" >
+         &nbsp; &nbsp; &nbsp;<h1 class="display-1 fw-bold mx-5 ps-4 " > The Relay</h1>
+        <p  class="fs-1 fw-lighter">&nbsp;Apple product are designed <br>for every athlet. and every body.</p> <br>
+    <button style="margin-left: 27%;" class="btn btn-lg btn-light justify-content-center">watch the film</button>
+    </a></div>
+    </section>
+    <section class=" bg-image d-flex s col-sm-12 col-md-12 
+    mt-0 container-fluid w-lg-75 overflow-hidden" style="background-image: url(./hero_iphone_family_a__c7v3mvx3jv42_medium.jpg)
+     ; background-size:cover; background-repeat: no-repeat;background-position: center;min-width: 100%; height: 900px; overflow: hidden;" >
+     <div class="center justify-content-center mx-auto mt-3">   <a href="" 
+        class=" mt-5 text-decoration-none 
+       text-white" >
+         &nbsp; &nbsp; &nbsp;<h1  class="display-1 fw-bold mx-5 ps-4 " > iphone</h1>
+        <p  class="fs-1 fw-lighter">our most powerfull camera yet.<br>ulltra fast chips.and USB-C .</p> <br>
+    <button  class="btn btn-lg btn-primary position-absolute start-50 ">Learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button style="margin-left: 10%;" class="btn btn-lg btn-outline-primary  ">Shop iphone</button>
+    </a></div>
+    </section>
+    
+    <section style="background-color: rgba(216, 216, 233, 0.597);" class="mt-3">
+        <div style="border: 1px solid rgba(216, 216, 233, 0.597);; width: fit-content;;"s class=" mx-auto">
+            <a  class="text-decoration-none text-white text-center mt-5" href="">  
+                <h1 style=" transform: rotate(-8deg);border-radius: 50px; border:1px solid white;width: fit-content; padding: 50px;" class="bg-info fs-1 fw-bolder rotate-45 ">Buy MAC <br>or ipad <br>for college.
+                      <br> <img class="position-absolute top-0 start-0" src="./hero_tapback_heart__fyumvc1lhniy_medium (1).png"   class="ee"  alt="">  
+                      <img src="./hero_sticker_ipadair__bk6ffplndvte_medium.png" class="position-absolute top-50 start-0"   alt="">
+                      <img img class="position-absolute top-50 start-50"src="./hero_sticker_mba__b0ht7774wpaq_medium.png"  alt="">
+                    <br><br></h1><br><br><br>
+                
+                <p style="position: relative;left: 150px; top: -78px; width: fit-content; border:1px solid white ;"
+                 class="bg-info fs-6  ">
+                 with  education saving </p><br><br>
+ <h2 class="border rounded-5 bg-info" style="position: relative; bottom: 130px; left: 80px; transform: rotate(7deg);">get
+                     a gift card  <br>up to $150*  <img class="position-absolute " src="./hero_sticker_giftcard__d13z4bhzszcm_medium.png"   alt=""></h2>
+                     
+                     <pre style=" position: relative;bottom: 100px ;left: 60px; border-radius: 50px;width: fit-content; 
+                     " class=" fs-6 bg-body text-dark">only at the apple store
+                &nbsp;<img class="position-absolute start-90 " src="./hero_tapback_exclamation__cxgmsdb0hkia_medium (1).png"  class="dd"   alt=""></pre>
+                   
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button style="position: relative;left: 50px; bottom: 80px;" class="btn btn-outline-primary ">shop</button>
+            </a>  </div>      
+        
+    </section>
+    <div class="container-fluid m-3">
+        <div class="row ">
+            <div 
+            style=" background-image: url(./promo_ipadpro__ch217v9v7no2_medium.jpg); margin-left: 0px; overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;"
+            class="col-12 col-md-6 border border-right-5 border-white">
+                <div class="box text-center mt-5">
+                    <a href="" class="text-decoration-none">
+                        <h2 class="fs-1 display-1 fw-semibold text-white">ipad pro</h2>
+                        <p class="fs-3 display-3 text-white ">unbelivable thin.incridible powerfull.</p><br>
+                        <button class="btn btn-lg btn-primary">learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-lg btn-outline-primary">buy</button>
+                    </a>
+               
+                </div>
+            </div>
+            <div 
+            style=" background-image: url(./promo_macbook_air_m3__e43jegok3wuq_medium.jpg);overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;;"
+    6        class=" col-xx-12 col-md-6 p-3  border border-left-2 border-white">
+            
+                <div class="box text-center mt-5">
+                    <a href="" class="text-decoration-none">  
+                            <h2 class="fs-1 display-1 fw-semibold  text-dark">Mac book air</h2>
+                    <p class="fs-3 display-3 text-dark ">lean mean.M3 machine</p><br>
+                    <button class="btn btn-lg btn-primary">learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-lg btn-outline-primary">buy</button>
+             </a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid m-3">
+    <div class="row  ">
+        <div 
+        style=" background-image: url(./promo_apple_vision_pro__f4v4zp0sum2y_medium.jpg); margin-left: 0px; overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;"
+        class=" col-md-6 col-sm-12  border border-right-5 border-white">
+            <div style="position: relative; top: 420px;" class="box text-center mt-5 mx-auto">
+                <a href="" class="text-decoration-none">
+                    <img src="./promo_logo_apple_vision_pro__90zi46p7dc2y_medium (1).png" alt="" class="p">
+                    <p class="fs-3 display-3 text-dark ">The era of spatial computing is here.</p><br>
+                    <button class="btn btn-lg btn-primary">learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-lg btn-outline-primary">buy</button>
+                </a>
+           
+            </div>
+        </div>
+        <div 
+        style=" background-image: url(./promo_apple_watch_series_9_order__b3u85rm9zf6u_medium.jpg); overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;;"
+         class=" col-12 col-md-6 bg-  border border-left-2 border-white">
+        
+            <div class="box text-center mt-5">
+                <a href="" class="text-decoration-none">  
+                    <img src="./promo_logo_apple_watch_series_9__ckz0hbex0yeu_medium (1).png" alt="" class="p"><br><br>
+                <p class="fs-3 display-3 text-white ">smarter.Brighter.Mighther.</p><br>
+                <button class="btn btn-lg btn-primary">learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-lg btn-outline-primary">buy</button>
+         </a>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+
+    <div class="container-fluid m-3">
+        <div class="row d ">
+            <div 
+            style=" background-image: url(./promo_apple_card__5cm7draujpey_medium.jpg); margin-left: 0px; overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;"
+            class=" col-md-6 col-sm-12  border border-right-5 border-white">
+            <div class="box text-center mt-5">
+                <a href="" class="text-decoration-none">  <img src="./logo__dcojfwkzna2q_medium (1).png" alt="" class="p">
+                <br><p class="fs-3 display-3 text-dark ">Get up to 3% daily cash back <br>
+                    &nbsp;&nbsp;with every purchase.</p><br>
+                <button class="btn btn-lg btn-primary">learn more</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn-lg btn-outline-primary">apply now</button></a>
+            </div>
+            </div>
+            <div 
+            style=" background-image: url(./promo_iphone_tradein__bugw15ka691e_medium.jpg); overflow: hidden; background-position: center; background-size: cover; height: 700px; background-repeat: no-repeat;;"
+             class=" col-12 col-md-6 bg-  border border-left-2 border-white">
+               
+                <div class="box text-center mt-5">
+                    <a href="" class="text-decoration-none">   <img src="./logo_tradein__d1fpktgipvki_medium (1).png" alt="" class="p">
+                   <br> <p class="fs-3 display-3 text-dark ">Get $170-$620 in credit when you<br>
+                        &nbsp;&nbsp;trade in iphone 11 or higher.</p><br>
+                    <button class="btn btn-lg btn-primary">get your estimate</button>
+                            </div>
+               </a>
+        </div>
+    </div>
+
+    <div id="carouselExampleIndicators" class="carousel slide overflow-hidden
+    my-2">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+
+      </div>
+      <div class="carousel-inner d-flex">
+        <div class="carousel-item active">
+          <img src="./689x387 (1).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./689x387 (10).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./689x387 (11).jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./689x387 (12).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (13).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (15).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (14).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (13).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (20).jpg" class="d-block w-100" alt="...">
+        </div>  <div class="carousel-item">
+          <img src="./689x387 (21).jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="slideshow-container">
+      <div class="slides">
+          <div class="slide">
+              <img src="./131x131SC.DN01 (1).jpg" alt="Slide 1">
+          </div>
+          <div class="slide">
+              <img src="./131x131SC.DN01.jpg" alt="Slide 2">
+          </div>
+          <div class="slide">
+              <img src="./286x161.jpg" alt="Slide 3">
+          </div>
+          <div class="slide">
+            <img src="./131x131SC.DN01 (1).jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="./286x161.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="./131x131SC.DN01.jpg" alt="Slide 1">
+    </div>
+    <div class="slide">
+      <img src="./131x131SC.DN01 (1).jpg" alt="Slide 1">
+  </div>
+  <div class="slide">
+    <img src="./286x161.jpg" alt="Slide 1">
+</div>
+<div class="slide">
+  <img src="./131x131SC.DN01.jpg" alt="Slide 1">
+</div>
+<div class="slide">
+  <img src="./131x131SC.DN01 (1).jpg" alt="Slide 1">
+</div>
+<div class="slide">
+  <img src="./286x161.jpg" alt="Slide 1">
+</div>
+<div class="slide">
+  <img src="./131x131SC.DN01.jpg" alt="Slide 1">
+</div>
+          <div class="slide">
+              <img src="./131x131SC.DN01 (1).jpg" alt="Slide 4">
+          </div>
+          
+      </div>
+           
+  </section>
+         
+                  <section class="small bg-light text-muted mt-3 pt-4"> <footer class=" w-75 text-align--center mx-auto">
+                    <p>*Available for Qualified Purchasers only. Qualified Purchasers receive an Apple Gift Card when they purchase an Eligible
+                         Product at a Qualifying Location through September 30, 2024. Gift card values may vary by Eligible Product. Only one Apple Gift Card
+                          per Eligible Product per Qualified Purchaser. Offer subject to availability. While supplies last. Qualified Purchasers shall receive
+                           a discount equal to the value of the Apple Gift Card off the price of the Eligible Product, but will be charged for all items in 
+                           their cart, including the Apple Gift Card. Important notice regarding the checkout receipt and monthly statement for Apple Card 
+                           Monthly Installments (ACMI) purchases with this promotion: Qualified Purchasers selecting ACMI (a 0% APR payment option available 
+                           only in the U.S.) as payment type at checkout shall receive a discount equal to the value of the Apple Gift Card off the price of 
+                           the Eligible Product. This will result in one ACMI installment plan over 12 months for the Eligible Product discounted by the 
+                           instant credit, and a second ACMI installment plan over 12 months for the full price of the Apple Gift Card. The total combined 
+                           
+                           amount charged over the two separate ACMI installment plans will reflect the original full retail price of the Eligible Product. 
+                           Separately, Qualified Purchasers will receive and be charged for the Apple Gift Card in the amount of the applicable discount off 
+                           the Eligible Product. Apple Card Monthly Installments (ACMI) is a 0% APR payment option that is only available if you select it at 
+                           checkout in the U.S. for eligible products purchased at Apple Store locations,<a href="" class="text-muted"> apple.com</a>, 
+                           the Apple Store app, or by calling 1-800-MY-APPLE, and is subject to credit approval and credit limit. See <a href="" class="text-muted">
+                            support.apple.com/kb/HT211204</a> for more information about eligible products. APR ranges may vary based on when you accepted an Apple 
+                            Card. Cardholders who accept an Apple Card on and or after February 1, 2024: Variable APRs for Apple Card, other than ACMI, range from
+                             19.24% to 29.49% based on creditworthiness. Rates as of February 1, 2024. Existing cardholders: See your Customer Agreement for applicable
+                              rates and fee. If you buy an ACMI-eligible product by choosing to pay in full with Apple Card (instead of using ACMI), that purchase is 
+                              subject to the Apple Card variable APR, not 0% APR. Taxes and shipping on ACMI purchases are subject to the variable APR, not 0% APR. 
+                              When you buy an iPhone with ACMI, you’ll need to select AT&T, T-Mobile, or Verizon as your carrier when you check out. An iPhone 
+                              purchased with ACMI is always unlocked, so you can switch carriers at any time. ACMI is not available for purchases made online at the 
+                              following special stores: Apple Employee Purchase Plan; participating corporate Employee Purchase Programs; Apple at Work for
+                               small businesses; Government and Veterans and Military Purchase Programs; or on refurbished devices. The last month’s payment 
+                               for each product will be the product’s purchase price, less all other payments at the monthly payment amount. ACMI financing is 
+                               subject to change at any time for any reason, including but not limited to installment term lengths and eligible products. See <a href="" class="text-muted" >
+                                support.apple.com/kb/HT211204</a>for information about upcoming changes to ACMI financing. See the <a href="" class="text-muted" >Apple Card 
+                                    Customer Agreement </a>for more information about ACMI financing. Apple Card is issued by Goldman Sachs Bank USA, Salt Lake City Branch. 
+                                    Available for qualifying applicants in the United States. If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923
+                                     with questions about accessing this offer or applying for Apple Card. This offer cannot be combined with the Apple Employee Purchase Plan
+                                      or business loyalty pricing. Additional restrictions apply. View full terms and conditions of offer <a href="" class="text-muted"> here</a> .</p><br>
+            <p>1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.
+                        Available in the U.S. on apple.com, in the Apple Store app, and at Apple Stores.
+                        To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch.
+                        If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+                        Learn more about how Apple Card applications are evaluated at support.apple.com/kb/HT209218.
+                        A subscription is required for Apple TV+. <br>
+                        A subscription is required for Apple Arcade, Apple Fitness+, and Apple Music.</p> <br>
+                        <br> Available in the U.S. on <a href="" class="text-muted">apple.com</a>, in the Apple Store app, and at Apple Stores. <br>
+                        <br> To access and use all Apple Card features and products available only to Apple Card users, you must add Apple Card to Wallet on an iPhone or iPad that supports and has the latest version of iOS or iPadOS. Apple Card is subject to credit approval, available only for qualifying applicants in the United States, and issued by Goldman Sachs Bank USA, Salt Lake City Branch. <br>
+                       <br> If you reside in the U.S. territories, please call Goldman Sachs at 877-255-5923 with questions about Apple Card.
+             <br>Learn more about how Apple Card applications are evaluated at <a href="" class="text-muted">support.apple.com/kb/HT209218</a>. <br>
+            <br>A subscription is required for Apple TV+. <br>
+            A subscription is required for Apple Arcade, Apple Fitness+, and Apple Music. <br><br>
+                        <hr><div class="d-block d-md-none ">
+                          <div class="dropdown">
+                              <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  shop and learn
+                              </button>
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a href="" class="text-muted text-decoration-none"> store </a>
+                                  <a href="" class="text-muted text-decoration-none"> mac </a>
+                                  <a href="" class="text-muted text-decoration-none"> ipad </a>
+
+                                  <a href="" class="text-muted text-decoration-none">iphone</a>
+                                  <a href="" class="text-muted text-decoration-none"> watch </a>
+                                  <a href="" class="text-muted text-decoration-none"> vishion </a>
+                                  <a href="" class="text-muted text-decoration-none"> airpods </a>
+                                  <a href="" class="text-muted text-decoration-none"> tv&home</a>
+                                  <a href="" class="text-muted text-decoration-none"> air tag </a>
+                                  <a href="" class="text-muted text-decoration-none"> accessories </a>
+                                  <a href="" class="text-muted text-decoration-none"> gift cards</a>
+                                  <hr>
+<br>
+
+                              </div><br><hr>
+                              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              apple wallet
+                            </button><br><hr>
+                            
+                            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            account
+                          </button><br><hr>
+                          <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Entertaiment
+                        </button><br><hr>
+                       
+                         <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        apple store
+                      </button><br><hr>
+                      
+                      <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        for business
+                    </button><br><hr>
+                   
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      for education
+                  </button><br><hr>
+                  
+                  <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  for Healthcare
+                </button><br><hr>
+                
+                <button class=" dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  for government
+              </button><br><hr>
+
+              
+              <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                apple values
+            </button><br><hr>
+            <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              about apple
+          </button><br><hr>
+        
+
+           
+                          </div>
+                      </div>
+                        <div class="row d-none d-md-flex">
+                            <div class="col-md-2"><ul>
+                                <div class="text-dark "> shope and learn</div> 
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> store </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> mac </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> ipad </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none">iphone</a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> watch</a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> vision </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> airpods </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none">tv&home </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> airtag </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> accessories</a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> gift Cardholders</a></li>
+                            </ul>
+                            <ul>
+                                <div class="text-dark ">Apple walet </div>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class=" text-muted text-decoration-none">wallet </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class=" text-muted text-decoration-none"> apple card </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class=" text-muted text-decoration-none"> apple pay </a></li>
+                                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class=" text-muted text-decoration-none"> apple cash</a></li>
+                            </ul>
+                        </div>
+                       
+                       <div class="col-md-3"><ul>
+                       <div class="text-dark">Account</div>
+            
+                            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> manage your Apple id </a></li>
+                            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">apple store accoun </a></li>
+                            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">icloud.com</a></li>
+                        </ul>
+                    <ul>
+                       <div class="text-dark"> Entertainment</div>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> <a href="" class="text-muted text-decoration-none"> Apple One </a></li>       
+             <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple TV+ </a></li>
+             <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Music </a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Arcade/a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Fitness+</a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Apple News+ </a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Podcasts </a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Books</a></li>
+            <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> App Store</a></li>
+             </ul>
+                </div>
+                <div class="col-md-2">
+                    <ul>
+                        <div class="text-dark"> Apple Store</div> 
+                       <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> <a href="" class="text-muted text-decoration-none"> Find a Store </a></li>
+                       <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">  Genius Bar </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Today at Apple</a> </li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Group Reservations </a> </li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none" ><a href="" class="text-muted text-decoration-none"> Apple Camp </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Store App</a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Certified Refurbished</a> </li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple Trade In </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Financing </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"> <a href="" class="text-muted text-decoration-none">Carrier Deals at Apple </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Order Stat </a></li>
+                        <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Shopping Help </a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-2"><ul>
+                    
+                    <div class="text-dark"> For Business</div> 
+                    <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple and Business </a></li>
+                    <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Shop for Business</a></li>
+                </ul>
+            <ul>  <div class="text-dark"> For Education</div> 
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple and Education</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">  Shop for K-12</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">  Shop for College </a></li>
+            </ul>
+            <ul> <div class="text-dark"> For Healthcare</div> 
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Apple in Healthcare </a> </li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Mac in Healthcare </a> </li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Health on Apple Watch</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Health Records on iPhone and iPad</a></li>
+            </ul>
+            <ul><div class="text-dark"> For Government</div> 
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Shop for Government </a> </li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Shop for Veterans and Military</a></li>
+            </ul></div>
+            <div class="col-md-2"><ul>
+                <div class="text-dark">  Apple Values</div>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Accessibility</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Education</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Environmen</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Inclusion and Diversity</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Privacy </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Racial Equity and Justice</a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Supply Chain </a></li>
+            </ul>
+            <ul><div class="text-dark"> About Apple </div>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Newsroom </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none">Apple Leadership </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Career Opportunities </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Investors </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Ethics & Compliance </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Events </a></li>
+                <li class="list-unstyled "><a href="" class="text-muted text-decoration-none"><a href="" class="text-muted text-decoration-none"> Contact Apple </a></li>
+            </ul></div>
+            
+             
+            
+            
+            
+            
+            
+            
+            
+                        </div>More ways to shop: <a href="">Find an Apple Store </a>or <a href="">other retailer</a> near you. Or call 1-800-MY-APPLE. <br> <br>
+                        <hr> <br>
+                        Copyright &copy;2024 Apple Inc. All rights reserved. 
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            &nbsp;
+            <a href="" class="text-muted text-decoration-none"> Privacy Policy </a> |<a href="" class="text-muted text-decoration-none">  Terms of Use </a> |  <a href="" class="text-muted text-decoration-none"> Sales and Refunds </a>|<a href="" class="text-muted text-decoration-none"> Legal </a> |<a href="" class="text-muted text-decoration-none"> Site Map</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <a href="" class="text-muted text-decoration-none">united states</a> 
+            
+                </footer></section>
+  
+</body>
+</html>
